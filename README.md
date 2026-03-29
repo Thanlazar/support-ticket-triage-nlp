@@ -38,8 +38,8 @@ The dataset is based on real support ticket data, is multilingual, and has been 
 - Jupyter Notebook
 
 ## Project Files
-- `01_data_loading.ipynb` for data loading and exploration
-- `02_baseline_model.ipynb` for baseline modeling and evaluation
+- `01_data_exploration.ipynb` for data loading and exploration
+- `02_baseline_modeling.ipynb` for baseline modeling and evaluation
 - `requirements.txt` for the main Python dependencies
 
 ## How to Run
