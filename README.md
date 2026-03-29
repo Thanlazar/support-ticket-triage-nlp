@@ -5,7 +5,10 @@ In this project, I wanted to explore whether the text of support tickets can hel
 The idea was to build a simple NLP workflow and see how useful ticket text is for faster triage.
 
 ## Dataset
-The dataset contains IT support tickets and their category labels.
+Dataset source: Zenodo – Classification of IT Support Tickets
+
+It contains 2,229 IT support tickets classified into 7 categories.  
+The dataset is based on real support ticket data, is multilingual, and has been cleaned from personal information, which makes it a useful dataset for text classification practice.
 
 ## What I did
 - loaded and explored the dataset
@@ -22,6 +25,11 @@ The dataset contains IT support tickets and their category labels.
 - many tickets follow repeated or template-like patterns
 - the baseline model reached about 75.8% accuracy on the test set
 
+## Results
+- Baseline model accuracy: 75.8%
+- Strong performance on Fileservice and EOL categories
+- Several categories were often misclassified as Support general
+
 ## Tools
 - Python
 - pandas
@@ -30,9 +38,14 @@ The dataset contains IT support tickets and their category labels.
 - Jupyter Notebook
 
 ## Project Files
-- `data/` for the dataset files
-- `notebooks/` for the analysis and modeling notebooks
-- `outputs/` for plots and results
+- `01_data_loading.ipynb` for data loading and exploration
+- `02_baseline_model.ipynb` for baseline modeling and evaluation
+- `requirements.txt` for the main Python dependencies
+
+## How to Run
+1. Install the required libraries from `requirements.txt`
+2. Open the notebooks in Jupyter Notebook
+3. Download the dataset files from Zenodo and place them in a local folder before running the notebooks
 
 ## Final Note
 This project helped me better understand how text data can be explored, prepared, and used in a simple classification task.  
